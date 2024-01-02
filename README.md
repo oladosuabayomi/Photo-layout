@@ -1,2 +1,2 @@
 ## An Adaptive Photo Layout with CSS Flex-box.
-Resize your screen to the see effect
+Resize your screen to see the effect
