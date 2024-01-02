@@ -18,7 +18,38 @@
 .column img {
     vertical-align: middle;
     margin-top: 8px;
+    transition: transform 0.3s;
+}
+
+.image-container {
     position: relative;
+    overflow: hidden;
+}
+
+.image-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    color: white;
+}
+
+.image-info p {
+    padding: 10px;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.image-container:hover .image-info {
+    opacity: 1;
 }
 
 @media (max-width: 808px) {
